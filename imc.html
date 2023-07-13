@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="imc.css">
+    <script src="imc.js"></script>
+    <title>Calculateur IMC</title>
+</head>
+<body>
+    <div class="ctr">
+        <h1>Calculateur IMC</h1>
+        <p>Rentrez votre poids et taille </p>
+        <input id="m"type="text" placeholder="Taille en m">
+        <input id="kg"type="text" placeholder="Poids en kg">
+        <input id="val" type="button" value="Valider">
+    </div>
+    
+    <script>
+        let a = $('#val');
+        let z = $('<p></p>');
+        a.on('click', () => {
+            var p = $('#kg').val();
+            var t = $('#m').val();
+            var imc = p/(t**2);
+            let txt = "Votre IMC est de : " + Math.round(imc);
+            z.text(txt);
+            $('.ctr').append(z);
+        });
+    </script>
+    
+</body>
+</html>
