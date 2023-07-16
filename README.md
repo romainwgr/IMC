@@ -1,3 +1,3 @@
 # IMC
 
-Projet fait avec Javascript avec jQuery et un peu d'HTML et CSS pour la création d'un site calculant l'IMC
+Calculatrice d'IMC avec javascript et jQuery avec un peu d'html et css
