@@ -2,15 +2,26 @@
     padding: 0;
     margin:0;
     box-sizing: border-box;
+    background-color: rgb(194, 189, 189);
+    color: rgb(71, 66, 66);
+    
 }
 .ctr{
   border: 2px solid;
   margin:0 auto;
-  width: 50%;
+  width: 40%;
   text-align: center;
+  padding :10px;
 }
 h1,p{
-    
-    margin:10px;
-    
+    margin:10px;   
+}
+#val{
+  cursor:pointer;
+}
+.js{
+  border-color:red; /*Pour signaler l'erreur avec le js */
+}
+input:focus {
+  outline: none;
 }
